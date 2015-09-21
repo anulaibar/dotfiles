@@ -1,0 +1,21 @@
+##
+# Lives in /etc/hosts
+#
+# localhost is used to configure the loopback interface
+# when the system is booting.  Do not change this entry.
+##
+127.0.0.1 localhost
+255.255.255.255	broadcasthost
+::1 localhost
+dev27 192.168.4.27
+dev28 192.168.4.28
+dev29 192.168.4.29
+dev30 192.168.4.30
+dev31 192.168.4.31
+dev32 192.168.4.32
+dev33 192.168.4.33
+dev34 192.168.4.34
+dev35 192.168.4.35
+dev36 192.168.4.36
+dev37 192.168.4.37
+dev38 192.168.4.38
