@@ -1,0 +1,12 @@
+dev27 () { ssh ollhel1@192.168.4.27; }
+dev28 () { ssh ollhel1@192.168.4.28; }
+dev29 () { ssh ollhel1@192.168.4.29; }
+dev30 () { ssh ollhel1@192.168.4.30; }
+dev31 () { ssh ollhel1@192.168.4.31; }
+dev32 () { ssh ollhel1@192.168.4.32; }
+dev33 () { ssh ollhel1@192.168.4.33; }
+dev34 () { ssh ollhel1@192.168.4.34; }
+dev35 () { ssh ollhel1@192.168.4.35; }
+dev36 () { ssh ollhel1@192.168.4.36; }
+dev37 () { ssh ollhel1@192.168.4.37; }
+dev38 () { ssh ollhel1@192.168.4.38; }
