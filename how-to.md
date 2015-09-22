@@ -7,21 +7,21 @@
      git clone ssh://git@stash.blocket.bin:7999/bl/blocket.git
      git clone ssh://git@stash.blocket.bin:7999/bl/pysite.git
 
-## Source functions
+## Setup
 
     . ./blocket/util/blocket_functions
-    . pysite/scripts/setup-path.sh
-
-## Functions
-
     blocket install
-    fixads
+    . pysite/scripts/setup-path.sh
 
 ## Make
 
     make rinfo
     make spiduser-olle
     make update-aindex
+
+## Functions
+
+    fixads
 
 ## Git clean
 
