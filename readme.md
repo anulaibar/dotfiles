@@ -15,6 +15,7 @@
 
 ## Make
 
+    make rc ri rd
     make rinfo
     make spiduser-olle
     make update-aindex
@@ -34,3 +35,7 @@
 ## Add hosts
 
     host jira.blocket.bin | cut -d' ' -f4 -f1 >> /etc/hosts
+
+## Shell
+
+    https://github.com/jimeh/git-aware-prompt
