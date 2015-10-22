@@ -1,3 +1,7 @@
+export GITAWAREPROMPT=~/.bash/git-aware-prompt
+source "${GITAWAREPROMPT}/main.sh"
+export PS1="\[$txtylw\]\w \[$txtcyn\]\$git_branch\[$txtpur\]\$git_dirty\[$txtylw\]\$\[$txtrst\] "
+
 alias ll='ls -GFlash'
 alias ls="ls -GFlash"
 
@@ -32,3 +36,4 @@ export DOCKER_CERT_PATH="/Users/ollehellgren/.docker/machine/machines/dev"
 export DOCKER_MACHINE_NAME="dev"
 # Run this command to configure your shell:
 # eval "$(docker-machine env dev)"
+export LESSCHARSET=UTF-8

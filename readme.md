@@ -39,3 +39,7 @@
 ## Shell
 
     https://github.com/jimeh/git-aware-prompt
+
+## httpie
+
+    pip install httpie
