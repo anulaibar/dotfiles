@@ -43,3 +43,18 @@
 ## httpie
 
     pip install httpie
+
+## Ports
+
+### Pysite
+
+    http://dev35.blocket.bin:23296/konto/meddelanden  # Mobile
+    https://dev35.blocket.bin:23258/konto/meddelanden # Desktop SSL
+    http://dev35.blocket.bin:23259/konto/meddelanden  # Desktop
+    http://dev35.blocket.bin:23293/konto/meddelanden  # Debug, start debug server by running `blocket debug`
+
+### Blocketblocket
+
+    http://dev35.blocket.bin:23260/ # Mobile
+    http://dev35.blocket.bin:23216/ # Desktop
+
