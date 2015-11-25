@@ -73,11 +73,11 @@
 
 Configure npm to use the dev proxy to install NPM packages
 
-    npm config set proxy dev-proxy:3128
-    npm config set https-proxy dev-proxy:3128
+    npm config set proxy devproxy:3128
+    npm config set https-proxy devproxy:3128
 
 Configure git to use the dev proxy
 
-    git config --global http.proxy dev-proxy:3128
-    git config --global https.proxy dev-proxy:3128
+    git config --global http.proxy devproxy:3128
+    git config --global https.proxy devproxy:3128
 
