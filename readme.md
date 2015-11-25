@@ -58,3 +58,19 @@
     http://dev35.blocket.bin:23260/ # Mobile
     http://dev35.blocket.bin:23216/ # Desktop
 
+## Blocketblocket tests
+
+    vi regress/final/Makefile   # Check names of testsuites
+    make rs-1000ads             # Run testsuite 1000ads
+
+## SSH to a QA
+
+    ssh ollhel1@dev35       # Connect to dev host
+    ssh ladmin@n.blcoket.se # Connect to QA gateway
+    ssh ladmin@https-2      # Connect to specific QA
+
+## Proxy in regress
+
+Configure npm to use the dev proxy to install NPM packages
+
+    npm config set proxy dev-proxy:3128
