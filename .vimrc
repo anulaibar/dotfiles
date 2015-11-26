@@ -18,7 +18,9 @@ Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'ternjs/tern_for_vim'
 Plugin 'tpope/vim-surround'
 Plugin 'gregsexton/MatchTag'
-Plugin 'Townk/vim-autoclose'
+Plugin 'Raimondi/delimitMate'
+Plugin 'tpope/vim-fugitive'
+Plugin 'airblade/vim-gitgutter'
 
 call vundle#end()                   "Finish Vundle initialization
 
