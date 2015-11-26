@@ -3,6 +3,7 @@ filetype off                        " required
 set t_Co=256			    " use 256 colors
 syntax on			    " use syntax highlighting
 set background=dark		    " use dark background
+set number
 
 " Clone vundle:
 " git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
@@ -37,5 +38,3 @@ set expandtab
 set smartindent
 set autoindent
 set nofoldenable
-"
-"
