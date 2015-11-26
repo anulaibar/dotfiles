@@ -8,6 +8,7 @@ call vundle#begin()                 " initialize
 
 Plugin 'VundleVim/Vundle.vim'       " let Vundle manage Vundle, required
 Plugin 'kien/ctrlp.vim'
+Plugin 'jelera/vim-javascript-syntax'
 
 call vundle#end()                   "Finish Vundle initialization
 
