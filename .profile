@@ -1,5 +1,6 @@
 export PYTHONIOENCODING=UTF-8
 export LESSCHARSET=UTF-8
+export TERM=xterm-color
 
 
 alias ll='ls -GFlash'
@@ -52,7 +53,7 @@ if [[ $(command -v git) ]]; then
     git config --global push.default matching
 fi
 
-if [[ -f ~/.bash/git-aware-prompt ]]; then
+if [[ -d ~/.bash/git-aware-prompt ]]; then
     export GITAWAREPROMPT=~/.bash/git-aware-prompt
     source "${GITAWAREPROMPT}/main.sh"
     export PS1="\[$txtylw\]\w \[$txtcyn\]\$git_branch\[$txtpur\]\$git_dirty\[$txtylw\]\$\[$txtrst\] "

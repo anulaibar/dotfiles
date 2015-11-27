@@ -1,5 +1,4 @@
 set nocompatible                    " be iMproved, required
-filetype off                        " required
 set t_Co=256			    " use 256 colors
 syntax on			    " use syntax highlighting
 set background=dark		    " use dark background
@@ -22,18 +21,21 @@ Plugin 'gregsexton/MatchTag'
 Plugin 'Raimondi/delimitMate'
 Plugin 'tpope/vim-fugitive'
 Plugin 'airblade/vim-gitgutter'
+Plugin 'mxw/vim-jsx'
+Plugin 'othree/html5.vim'
 
 call vundle#end()                   "Finish Vundle initialization
 
 let g:ctrlp_map = '<c-p>'           " Change default mapping for ctrlp
 let g:ctrlp_cmd = 'CtrlP'           " Change default command for ctrlp
+let g:jsx_ext_required = 0          " Allow JSX in normal JS files
 
 " ================ Indentation ======================
 filetype plugin indent on
 set smarttab
-set shiftwidth=4
-set softtabstop=4
-set tabstop=4
+set shiftwidth=2
+set softtabstop=2
+set tabstop=2
 set expandtab
 set smartindent
 set autoindent
