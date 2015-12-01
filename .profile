@@ -1,7 +1,7 @@
 export PYTHONIOENCODING=UTF-8
 export LESSCHARSET=UTF-8
 export TERM=xterm-color
-
+export LC_ALL=en_US.UTF-8
 
 alias ll='ls -GFlash'
 alias ls="ls -GFlash"
@@ -51,6 +51,8 @@ if [[ $(command -v git) ]]; then
     git config --global alias.last 'log -1 HEAD'
     git config --global core.editor /usr/bin/vim
     git config --global push.default simple
+    git config --global user.name "Olle Hellgren"
+    git config --global user.email olle.hellgren@blocket.se
 fi
 
 if [[ -d ~/.bash/git-aware-prompt ]]; then
