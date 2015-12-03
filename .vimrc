@@ -20,7 +20,6 @@ call vundle#end()                   " Finish Vundle initialization
 
 " ================ Vim settings =====================
 syntax enable			                  " use syntax highlighting
-set regexpengine=1
 set nocompatible                    " be iMproved, required
 set t_Co=256			                " use 256 colors
 set number
