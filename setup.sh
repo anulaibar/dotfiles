@@ -19,7 +19,6 @@ ln -s ~/utils/.profile ~/.profile
 ln -s ~/utils/.bash_profile ~/.bash_profile
 ln -s ~/utils/.bashrc ~/.bashrc
 ln -s ~/utils/.vimrc ~/.vimrc
-. ~/.bash_profile
 
 # Setup git and npm proxies
 git config --global http.proxy devproxy.blocket.bin:3128
@@ -32,3 +31,6 @@ if [[ ! -d ~/.vim/bundle ]]; then
     git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 fi
 vim +PluginInstall +qall
+
+echo -e "\e[34mGreat! Now just load .bash_profile to get all the glamour:"
+echo -e "\e[35m. ~/.bash_profile"
