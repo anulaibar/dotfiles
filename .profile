@@ -1,36 +1,10 @@
+# Env variables
 export PYTHONIOENCODING=UTF-8
 export LESSCHARSET=UTF-8
 export TERM=xterm-color
 export LC_ALL=en_US.UTF-8
 
-alias ll='ls -GFlash'
-alias ls="ls -GFlash"
-
-if [ -f ~/.functions ]; then . ~/.functions; fi
-
-#mount remote path
-m() {
-    if [ $1 != "" ];
-    then
-        sshfs ollhel1@192.168.4.$1: $HOME/RemoteHome/dev$1
-        sleep 2
-        cd $HOME/RemoteHome/dev$1
-    else
-        echo "no server id"
-    fi
-}
-
-#umount remote path
-um() {
-    if [ $1 != "" ];
-    then
-        cd
-        umount -f $HOME/RemoteHome/dev$1
-    else
-        echo "no server id"
-    fi
-}
-
+# Docker config
 if [[ $(command -v docker) ]]; then
     export DOCKER_TLS_VERIFY="1"
     export DOCKER_HOST="tcp://192.168.99.100:2376"
@@ -40,8 +14,7 @@ if [[ $(command -v docker) ]]; then
     # eval "$(docker-machine env dev)"
 fi
 
-
-# Git
+# Git config
 if [[ $(command -v git) ]]; then
     git config --global alias.co checkout
     git config --global alias.br branch
@@ -55,6 +28,7 @@ if [[ $(command -v git) ]]; then
     git config --global user.email olle.hellgren@blocket.se
 fi
 
+# PS1
 if [[ -d ~/.bash/git-aware-prompt ]]; then
     export GITAWAREPROMPT=~/.bash/git-aware-prompt
     source "${GITAWAREPROMPT}/main.sh"
@@ -62,3 +36,42 @@ if [[ -d ~/.bash/git-aware-prompt ]]; then
 else
     export PS1='\[\e[0;33m\]\h:\W \u\$\[\e[m\] '
 fi
+
+# Aliases
+alias ll='ls -GFlash'
+alias ls="ls -GFlash"
+
+# Functions
+ssh27 () { ssh ollhel1@dev27.blocket.bin; }
+ssh28 () { ssh ollhel1@dev28.blocket.bin; }
+ssh29 () { ssh ollhel1@dev29.blocket.bin; }
+ssh30 () { ssh ollhel1@dev30.blocket.bin; }
+ssh31 () { ssh ollhel1@dev31.blocket.bin; }
+ssh32 () { ssh ollhel1@dev32.blocket.bin; }
+ssh33 () { ssh ollhel1@dev33.blocket.bin; }
+ssh34 () { ssh ollhel1@dev34.blocket.bin; }
+ssh35 () { ssh ollhel1@dev35.blocket.bin; }
+ssh36 () { ssh ollhel1@dev36.blocket.bin; }
+ssh37 () { ssh ollhel1@dev37.blocket.bin; }
+ssh38 () { ssh ollhel1@dev38.blocket.bin; }
+
+m() {
+    if [ $1 != "" ];
+    then
+        sshfs ollhel1@192.168.4.$1: $HOME/RemoteHome/dev$1
+        sleep 2
+        cd $HOME/RemoteHome/dev$1
+    else
+        echo "no server id"
+    fi
+}
+
+um() {
+    if [ $1 != "" ];
+    then
+        cd
+        umount -f $HOME/RemoteHome/dev$1
+    else
+        echo "no server id"
+    fi
+}
