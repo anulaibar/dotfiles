@@ -4,6 +4,7 @@ rm ~/.profile && ln -s ~/utils/.profile ~/.profile
 rm ~/.bash_profile && ln -s ~/utils/.bash_profile ~/.bash_profile
 rm ~/.bashrc && ln -s ~/utils/.bashrc ~/.bashrc
 rm ~/.vimrc && ln -s ~/utils/.vimrc ~/.vimrc
+. ~/.bash_profile
 
 git config --global http.proxy devproxy.blocket.bin:3128
 git config --global https.proxy devproxy.blocket.bin:3128
