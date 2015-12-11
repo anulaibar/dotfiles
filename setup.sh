@@ -1,7 +1,7 @@
 #!/bin/bash
 
 cp ~/utils/.profile ~/.profile
-. ~/.profile
+echo "source .profile" >> ~/.bash_profile
 
 cp ~/utils/.vimrc ~/.vimrc
 
