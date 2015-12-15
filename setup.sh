@@ -13,18 +13,20 @@ fi
 if [[ -f ~/.vimrc ]]; then
     rm ~/.vimrc
 fi
+if [[ -f ~/.gitconfig ]]; then
+    rm ~/.gitconfig
+fi
+if [[ -f ~/.npmrc ]]; then
+    rm ~/.npmrc
+fi
 
 # Symlink new dot files
 ln -s ~/utils/.profile ~/.profile
 ln -s ~/utils/.bash_profile ~/.bash_profile
 ln -s ~/utils/.bashrc ~/.bashrc
 ln -s ~/utils/.vimrc ~/.vimrc
-
-# Setup git and npm proxies
-git config --global http.proxy devproxy.blocket.bin:3128
-git config --global https.proxy devproxy.blocket.bin:3128
-npm config set proxy devproxy.blocket.bin:3128
-npm config set https-proxy devproxy.blocket.bin:3128
+ln -s ~/utils/.gitconfig ~/.gitconfig
+ln -s ~/utils/.npmrc ~/.npmrc
 
 # Install vim plugins
 if [[ ! -d ~/.vim/bundle ]]; then
