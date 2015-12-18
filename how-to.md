@@ -8,8 +8,8 @@
 
 ## Links
 
-[Mobile](http://dev35.blocket.bin:23260/)
-[Desktop](http://dev35.blocket.bin:23216/)
+* [Mobile](http://dev35.blocket.bin:23260/)
+* [Desktop](http://dev35.blocket.bin:23216/)
 
 ## Tests
 
@@ -20,9 +20,9 @@
 
 ## Links
 
-[Mobile](http://dev35.blocket.bin:23296/konto/meddelanden)
-[Desktop SSL](https://dev35.blocket.bin:23258/konto/meddelanden)
-[Desktop](http://dev35.blocket.bin:23259/konto/meddelanden)
+* [Mobile](http://dev35.blocket.bin:23296/konto/meddelanden)
+* [Desktop SSL](https://dev35.blocket.bin:23258/konto/meddelanden)
+* [Desktop](http://dev35.blocket.bin:23259/konto/meddelanden)
 
 ## Debug
 
