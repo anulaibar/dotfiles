@@ -1,5 +1,4 @@
 "==================== Plugins ================================================
-" Clone vundle: git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 filetype off                                            " Disable file type detection
 set rtp+=~/.vim/bundle/Vundle.vim                       " Set the runtime path to include Vundle
 call vundle#begin()                                     " Initialize vundle
