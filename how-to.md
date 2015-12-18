@@ -8,8 +8,8 @@
 
 ## Links
 
-    [Mobile](http://dev35.blocket.bin:23260/)
-    [Desktop](http://dev35.blocket.bin:23216/)
+[Mobile](http://dev35.blocket.bin:23260/)
+[Desktop](http://dev35.blocket.bin:23216/)
 
 ## Tests
 
@@ -20,13 +20,13 @@
 
 ## Links
 
-    [Mobile](http://dev35.blocket.bin:23296/konto/meddelanden)
-    [Desktop SSL](https://dev35.blocket.bin:23258/konto/meddelanden)
-    [Desktop](http://dev35.blocket.bin:23259/konto/meddelanden)
+[Mobile](http://dev35.blocket.bin:23296/konto/meddelanden)
+[Desktop SSL](https://dev35.blocket.bin:23258/konto/meddelanden)
+[Desktop](http://dev35.blocket.bin:23259/konto/meddelanden)
 
 ## Debug
 
-    Run `blocket debug`, then go to [http://dev35.blocket.bin:23293/konto/meddelanden](http://dev35.blocket.bin:23293/konto/meddelanden)
+Run `blocket debug`, then go to [http://dev35.blocket.bin:23293/konto/meddelanden](http://dev35.blocket.bin:23293/konto/meddelanden)
 
 # QA
 
@@ -36,6 +36,6 @@
 
 # Tools
 
-## httpie
+[httpie](https://github.com/jkbrzt/httpie) - a command line HTTP client:
 
-    pip install httpie          # A command line HTTP client
+    pip install httpie
