@@ -17,16 +17,6 @@ Plugin 'altercation/vim-colors-solarized'   " Color scheme
 call vundle#end()
 filetype on
 
-" ================ Vim settings =====================
-syntax on                           " use syntax highlighting
-filetype plugin on
-filetype plugin indent on
-set nocompatible                    " be iMproved, required
-set t_Co=256			            " use 256 colors
-set number                          " line numbers
-set background=dark		            " use dark background
-colorscheme solarized
-
 " ============== Plugin settings ====================
 let g:ctrlp_map='<c-p>'           " Change default mapping for ctrlp
 let g:ctrlp_cmd='CtrlP'           " Change default command for ctrlp
@@ -43,3 +33,14 @@ set expandtab
 set smartindent
 set autoindent
 set nofoldenable
+
+" ================ Other settings ===================
+syntax on                           " use syntax highlighting
+filetype plugin on
+filetype plugin indent on
+set nocompatible                    " be iMproved, required
+set t_Co=256			            " use 256 colors
+set number                          " line numbers
+set background=dark		            " use dark background
+colorscheme solarized
+let mapleader = " "
