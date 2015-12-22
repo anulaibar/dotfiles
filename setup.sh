@@ -35,4 +35,4 @@ fi
 vim +PluginInstall +qall
 
 echo -e "\e[34mGreat! Now just load .bash_profile to get all the glamour:"
-echo -e "\e[35m. ~/.bash_profile"
+echo -e "\e[35m. ~/.bash_profile\e[0m"
