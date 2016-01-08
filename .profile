@@ -1,7 +1,6 @@
 # Env variables
 export PYTHONIOENCODING=UTF-8
 export LESSCHARSET=UTF-8
-export TERM=xterm-color
 export LC_ALL=en_US.UTF-8
 
 # Docker config
