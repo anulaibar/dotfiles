@@ -4,6 +4,7 @@
     make rinfo
     make spiduser-olle
     make update-aindex
+    make approve-ads
     fixads
 
 ## Links
