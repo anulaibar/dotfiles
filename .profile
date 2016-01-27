@@ -2,6 +2,7 @@
 export PYTHONIOENCODING=UTF-8
 export LESSCHARSET=UTF-8
 export LC_ALL=en_US.UTF-8
+export EDITOR=vim
 
 # Docker config
 if [[ $(command -v docker) ]]; then

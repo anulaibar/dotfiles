@@ -1,32 +1,32 @@
 #!/bin/bash
 
-# Remove existing dot files
-if [[ -f ~/.profile ]]; then
+# Remove existing dot files (regular files or symlinks)
+if [ -f ~/.profile ] || [ -h ~/.profile ]; then
     rm ~/.profile
 fi
-if [[ -f ~/.bash_profile ]]; then
+if [ -f ~/.bash_profile ] || [ -h ~/.bash_profile ]; then
     rm ~/.bash_profile
 fi
-if [[ -f ~/.bashrc ]]; then
+if [ -f ~/.bashrc ] || [ -h ~/.bashrc ]; then
     rm ~/.bashrc
 fi
-if [[ -f ~/.vimrc ]]; then
+if [ -f ~/.vimrc ] || [ -h ~/.vimrc ]; then
     rm ~/.vimrc
 fi
-if [[ -f ~/.gitconfig ]]; then
+if [ -f ~/.gitconfig ] || [ -h ~/.gitconfig ]; then
     rm ~/.gitconfig
 fi
-if [[ -f ~/.npmrc ]]; then
+if [ -f ~/.npmrc ] || [ -h ~/.npmrc ]; then
     rm ~/.npmrc
 fi
 
 # Symlink new dot files
-ln -s ~/utils/.profile ~/.profile
-ln -s ~/utils/.bash_profile ~/.bash_profile
-ln -s ~/utils/.bashrc ~/.bashrc
-ln -s ~/utils/.vimrc ~/.vimrc
-ln -s ~/utils/.gitconfig ~/.gitconfig
-ln -s ~/utils/.npmrc ~/.npmrc
+ln -s ~/projects/utils/.profile ~/.profile
+ln -s ~/projects/utils/.bash_profile ~/.bash_profile
+ln -s ~/projects/utils/.bashrc ~/.bashrc
+ln -s ~/projects/utils/.vimrc ~/.vimrc
+ln -s ~/projects/utils/.gitconfig ~/.gitconfig
+ln -s ~/projects/utils/.npmrc ~/.npmrc
 
 # Install vim plugins
 if [[ ! -d ~/.vim/bundle ]]; then
