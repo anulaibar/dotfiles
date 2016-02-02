@@ -45,4 +45,4 @@ set autoindent                                          " Copy indent from curre
 set smartindent                                         " Context aware indent when starting a new line
 set nowrap                                              " Do not line break long lines
 nnoremap <C-n> :bnext<CR>
-nnoremap <C-p> :bprevious<CR>
+nnoremap <C-b> :bprevious<CR>
