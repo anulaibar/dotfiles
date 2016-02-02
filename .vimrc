@@ -43,5 +43,6 @@ set smarttab
 set expandtab
 set autoindent                                          " Copy indent from current line when starting a new line
 set smartindent                                         " Context aware indent when starting a new line
+set nowrap                                              " Do not line break long lines
 nnoremap <C-n> :bnext<CR>
 nnoremap <C-p> :bprevious<CR>
