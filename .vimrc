@@ -14,6 +14,7 @@ Plugin 'othree/html5.vim'                               " HTML syntax highlighti
 Plugin 'mxw/vim-jsx'                                    " JSX syntax highlighting and indenting
 Plugin 'altercation/vim-colors-solarized'               " Color scheme
 Plugin 'jeetsukumaran/vim-buffergator'                  " List, select and switch between buffers
+Plugin 'tpope/vim-commentary'                           " Comment out text
 call vundle#end()
 filetype on
 
@@ -42,3 +43,5 @@ set smarttab
 set expandtab
 set autoindent                                          " Copy indent from current line when starting a new line
 set smartindent                                         " Context aware indent when starting a new line
+nnoremap <C-n> :bnext<CR>
+nnoremap <C-p> :bprevious<CR>
