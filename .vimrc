@@ -14,7 +14,7 @@ Plugin 'othree/html5.vim'                               " HTML syntax highlighti
 Plugin 'mxw/vim-jsx'                                    " JSX syntax highlighting and indenting
 Plugin 'altercation/vim-colors-solarized'               " Color scheme
 Plugin 'jeetsukumaran/vim-buffergator'                  " List, select and switch between buffers
-Plugin 'tpope/vim-commentary'                           " Comment out text
+Plugin 'tpope/vim-commentary'                           " Comment out text in visual mode with 'gc'
 call vundle#end()
 filetype on
 
