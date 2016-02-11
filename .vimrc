@@ -15,6 +15,7 @@ Plugin 'mxw/vim-jsx'                                    " JSX syntax highlightin
 Plugin 'altercation/vim-colors-solarized'               " Color scheme
 Plugin 'jeetsukumaran/vim-buffergator'                  " List, select and switch between buffers
 Plugin 'tpope/vim-commentary'                           " Comment out text in visual mode with 'gc'
+Plugin 'scrooloose/nerdtree'                            " Show directory tree to the right
 call vundle#end()
 filetype on
 
@@ -25,6 +26,7 @@ let g:ctrlp_custom_ignore='node_modules\|DS_Store\|git' " Ignore node_modules et
 let g:jsx_ext_required=0                                " Allow jsx in .js files (mocha tests use .js)
 let g:buffergator_viewport_split_policy='B'             " Buffergator window opens at the bottom
 let g:buffergator_hsplit_size=10                        " Height of the Buffergator window
+map <C-n> :NERDTreeToggle<CR>                           " Ctrl+n - Toggle NERDTree
 
 "==================== Vim settings ===========================================
 syntax on                                               " Use syntax highlighting
@@ -44,5 +46,5 @@ set expandtab
 set autoindent                                          " Copy indent from current line when starting a new line
 set smartindent                                         " Context aware indent when starting a new line
 set nowrap                                              " Do not line break long lines
-nnoremap <C-n> :bnext<CR>
-nnoremap <C-b> :bprevious<CR>
+nnoremap <C-b> :bnext<CR>                               " Ctrl+n - Go to the next buffer
+nnoremap <C-S-b> :bprevious<CR>                         " Ctrl+Shift+n - Go to the previous buffer

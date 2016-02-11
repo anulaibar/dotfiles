@@ -35,6 +35,22 @@ Run `blocket debug`, then go to [http://dev35.blocket.bin:23293/konto/meddelande
     ssh ladmin@n.blcoket.se # Connect to QA gateway
     ssh ladmin@https-2      # Connect to specific QA
 
+## Build
+
+    git clean -fdx
+    make rc ri rd && make rpm-qa
+    qactl
+    qactl create ikeafix
+    ssh ladmin@s.blocket.se
+    ssh ikeafix-2
+    sudo su - bsearch
+    crontab -l
+    /opt/blocket/bin/aindex_update.sh push_export=1 # Kanske inte behövs, annons-indexering körs varje minut
+
+
+
+Visit http://myblocketclone-www.blcoket.se
+
 # Tools
 
 [httpie](https://github.com/jkbrzt/httpie) - a command line HTTP client:
