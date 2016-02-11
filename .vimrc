@@ -35,7 +35,7 @@ set t_Co=256                                            " Use 256 colors
 set number                                              " Show line numbers
 set background=dark                                     " Use dark background
 colorscheme solarized                                   " Use the 'solarized' color scheme
-let mapleader = " "                                     " Press space to activate commands
+let mapleader = ","                                     " Press comma to activate commands
 set list                                                " Dispay whitespace chars
 set listchars=tab:>-,trail:·                            " Display only tabs and spaces
 set shiftwidth=4                                        " Use four spaces for each step of (auto)indent
