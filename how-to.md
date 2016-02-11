@@ -7,6 +7,17 @@
     make approve-ads
     fixads
 
+## Check
+
+Find configs with a message center url
+
+    find . -type f -name "*bconf*" | xargs grep "common.messagecenter.api.url=http" --color
+
+Check which message center url is loaded
+
+    printf "cmd:bconf\ncommit:1\nend\n" | nc localhost 22605 | grep messagecenter
+
+
 ## Links
 
 * [Mobile](http://dev35.blocket.bin:23260/)
