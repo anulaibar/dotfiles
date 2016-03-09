@@ -7,6 +7,35 @@
     make approve-ads
     fixads
 
+## Troubleshoot message center
+
+Find configs with a message center url
+
+    find . -type f -name "*bconf*" | xargs grep "common.messagecenter.api.url=http" --color
+
+Check which message center url is loaded
+
+    printf "cmd:bconf\ncommit:1\nend\n" | nc localhost 22605 | grep messagecenter
+
+Use pre env for message center (deprecated)
+
+    make messagecenter-pre
+
+Change mc env
+
+    vi build/regress/conf/messagecenter_dev_keys.bconf
+
+Check if mc user id is set in db
+
+    make psql
+    select * from mc_users;
+    select * from account_emails;
+
+Check if mc user id is stored in redis
+
+    redis-cli -p 22087
+    monitor
+
 ## Links
 
 * [Mobile](http://dev35.blocket.bin:23260/)
