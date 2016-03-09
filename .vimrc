@@ -6,14 +6,12 @@ Plugin 'VundleVim/Vundle.vim'                           " Let Vundle manage Vund
 Plugin 'ctrlpvim/ctrlp.vim'                             " Fuzzy file name search
 Plugin 'tpope/vim-surround'                             " Modify surrounding quotes, parens, brackets ...
 Plugin 'gregsexton/MatchTag'                            " Highlight matching HTML tag
-Plugin 'Raimondi/delimitMate'                           " Automatic closing of quotes, parenthesis, brackets ...
 Plugin 'tpope/vim-fugitive'                             " Git wrapper. Includes :Gdiff, :Gstatus, :Gblame ...
 Plugin 'airblade/vim-gitgutter'                         " Shows signs for added, modified, and removed lines
 Plugin 'pangloss/vim-javascript'                        " JS syntax highlighting and indenting
 Plugin 'othree/html5.vim'                               " HTML syntax highlighting and indenting
 Plugin 'mxw/vim-jsx'                                    " JSX syntax highlighting and indenting
 Plugin 'altercation/vim-colors-solarized'               " Color scheme
-Plugin 'jeetsukumaran/vim-buffergator'                  " List, select and switch between buffers
 Plugin 'tpope/vim-commentary'                           " Comment out text in visual mode with 'gc'
 Plugin 'scrooloose/nerdtree'                            " Show directory tree to the right
 call vundle#end()
@@ -24,8 +22,6 @@ let g:ctrlp_map='<c-p>'                                 " Change default mapping
 let g:ctrlp_cmd='CtrlP'                                 " Change default command for ctrlp
 let g:ctrlp_custom_ignore='node_modules\|DS_Store\|git' " Ignore node_modules et al. when fuzzy searching
 let g:jsx_ext_required=0                                " Allow jsx in .js files (mocha tests use .js)
-let g:buffergator_viewport_split_policy='B'             " Buffergator window opens at the bottom
-let g:buffergator_hsplit_size=10                        " Height of the Buffergator window
 map <C-n> :NERDTreeToggle<CR>                           " Ctrl+n - Toggle NERDTree
 
 "==================== Vim settings ===========================================
@@ -46,5 +42,5 @@ set expandtab
 set autoindent                                          " Copy indent from current line when starting a new line
 set smartindent                                         " Context aware indent when starting a new line
 set nowrap                                              " Do not line break long lines
-nnoremap <C-b> :bnext<CR>                               " Ctrl+n - Go to the next buffer
-nnoremap <C-S-b> :bprevious<CR>                         " Ctrl+Shift+n - Go to the previous buffer
+nnoremap <C-b> :bnext<CR>                               " Ctrl+b - Go to the next buffer
+nnoremap <C-S-b> :bprevious<CR>                         " Ctrl+Shift+b - Go to the previous buffer

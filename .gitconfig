@@ -16,3 +16,7 @@
 [user]
 	name = Olle Hellgren
 	email = olle.hellgren@blocket.se
+[color]
+    diff = auto
+    status = auto
+    branch = auto
