@@ -70,13 +70,8 @@ Run `blocket debug`, then go to [http://dev35.blocket.bin:23293/konto/meddelande
     make rc ri rd && make rpm-qa
     qactl
     qactl create ikeafix
-    ssh ladmin@s.blocket.se
-    ssh ikeafix-2
-    sudo su - bsearch
-    crontab -l
-    /opt/blocket/bin/aindex_update.sh push_export=1 # Kanske inte behövs, annons-indexering körs varje minut
 
-## Control panel
+## Approve ad in control panel
 
 Login https://nomc-www3.blcoket.se/controlpanel
 
@@ -84,7 +79,14 @@ Login https://nomc-www3.blcoket.se/controlpanel
     11111
 
 'Sök annons', 'Cleara', 'Godkänn'
-Re-index QA.
+
+## Re-index ads
+
+    ssh ladmin@s.blocket.se
+    ssh ikeafix-2
+    sudo su - bsearch
+    crontab -l # Annons-indexering körs random varje minut
+    /opt/blocket/bin/aindex_update.sh push_export=1
 
 # Tools
 
