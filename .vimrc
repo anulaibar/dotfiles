@@ -14,6 +14,7 @@ Plugin 'mxw/vim-jsx'                                    " JSX syntax highlightin
 Plugin 'altercation/vim-colors-solarized'               " Color scheme
 Plugin 'tpope/vim-commentary'                           " Comment out text in visual mode with 'gc'
 Plugin 'scrooloose/nerdtree'                            " Show directory tree to the right
+Plugin 'scrooloose/syntastic'                           " Syntax checking
 call vundle#end()
 filetype on
 
@@ -23,13 +24,18 @@ let g:ctrlp_cmd='CtrlP'                                 " Change default command
 let g:ctrlp_custom_ignore='node_modules\|DS_Store\|git' " Ignore node_modules et al. when fuzzy searching
 let g:jsx_ext_required=0                                " Allow jsx in .js files (mocha tests use .js)
 map <C-n> :NERDTreeToggle<CR>                           " Ctrl+n - Toggle NERDTree
+let g:syntastic_check_on_open = 1
+let g:syntastic_python_pep8_exec = '~/.local/bin/pep8'
+let g:syntastic_python_checkers = ['pep8']
+let g:syntastic_javascript_eslint_exec = './node_modules/.bin/eslint'
+let g:syntastic_javascript_checkers = ['eslint', 'jsxhint']
 
 "==================== Vim settings ===========================================
 syntax on                                               " Use syntax highlighting
 filetype plugin indent on                               " Load plugins and indent files for current file
 set t_Co=256                                            " Use 256 colors
 set number                                              " Show line numbers
-set background=dark                                     " Use dark background
+set background=light                                     " Use dark background
 colorscheme solarized                                   " Use the 'solarized' color scheme
 let mapleader = ","                                     " Press comma to activate commands
 set list                                                " Dispay whitespace chars

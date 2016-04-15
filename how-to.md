@@ -76,9 +76,15 @@ Run `blocket debug`, then go to [http://dev35.blocket.bin:23293/konto/meddelande
     crontab -l
     /opt/blocket/bin/aindex_update.sh push_export=1 # Kanske inte behövs, annons-indexering körs varje minut
 
+## Control panel
 
+Login https://nomc-www3.blcoket.se/controlpanel
 
-Visit http://myblocketclone-www.blcoket.se
+    Oscar
+    11111
+
+'Sök annons', 'Cleara', 'Godkänn'
+Re-index QA.
 
 # Tools
 
