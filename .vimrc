@@ -24,6 +24,7 @@ let g:ctrlp_cmd='CtrlP'                                 " Change default command
 let g:ctrlp_custom_ignore='node_modules\|DS_Store\|git' " Ignore node_modules et al. when fuzzy searching
 let g:jsx_ext_required=0                                " Allow jsx in .js files (mocha tests use .js)
 map <C-n> :NERDTreeToggle<CR>                           " Ctrl+n - Toggle NERDTree
+map <C-f> :NERDTreeFind<CR>                             " Ctrl+f - Go to open file in NERDTree
 let g:syntastic_check_on_open = 1
 let g:syntastic_python_pep8_exec = '~/.local/bin/pep8'
 let g:syntastic_python_checkers = ['pep8']
