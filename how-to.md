@@ -7,6 +7,10 @@
     make approve-ads
     fixads
 
+## Inspect variables
+
+    document.cookie = "debug_activated=1; domain=.blocket.bin; path=/"
+
 ## Troubleshoot message center
 
 Find configs with a message center url
