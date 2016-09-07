@@ -36,7 +36,7 @@ syntax on                                               " Use syntax highlightin
 filetype plugin indent on                               " Load plugins and indent files for current file
 set t_Co=256                                            " Use 256 colors
 set number                                              " Show line numbers
-set background=light                                     " Use dark background
+set background=light                                    " Background color
 colorscheme solarized                                   " Use the 'solarized' color scheme
 let mapleader = ","                                     " Press comma to activate commands
 set list                                                " Dispay whitespace chars
