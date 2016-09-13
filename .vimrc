@@ -37,7 +37,6 @@ filetype plugin indent on                               " Load plugins and inden
 set t_Co=256                                            " Use 256 colors
 set number                                              " Show line numbers
 set background=light                                    " Background color
-colorscheme solarized                                   " Use the 'solarized' color scheme
 let mapleader = ","                                     " Press comma to activate commands
 set list                                                " Dispay whitespace chars
 set listchars=tab:>-,trail:·                            " Display only tabs and spaces
