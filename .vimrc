@@ -15,6 +15,7 @@ Plugin 'altercation/vim-colors-solarized'               " Color scheme
 Plugin 'tpope/vim-commentary'                           " Comment out text in visual mode with 'gc'
 Plugin 'scrooloose/nerdtree'                            " Show directory tree to the right
 Plugin 'scrooloose/syntastic'                           " Syntax checking
+Plugin 'tpope/vim-sleuth'                               " Set shiftwidth and expandtab automatically
 call vundle#end()
 filetype on
 
@@ -40,11 +41,6 @@ set background=light                                    " Background color
 let mapleader = ","                                     " Press comma to activate commands
 set list                                                " Dispay whitespace chars
 set listchars=tab:>-,trail:·                            " Display only tabs and spaces
-set shiftwidth=4                                        " Use four spaces for each step of (auto)indent
-set softtabstop=4
-set tabstop=4
-set smarttab
-set expandtab
 set autoindent                                          " Copy indent from current line when starting a new line
 set smartindent                                         " Context aware indent when starting a new line
 set nowrap                                              " Do not line break long lines
