@@ -24,7 +24,7 @@ let g:ctrlp_map='<c-p>'                                 " Change default mapping
 let g:ctrlp_cmd='CtrlP'                                 " Change default command for ctrlp
 let g:ctrlp_custom_ignore='node_modules\|DS_Store\|git' " Ignore node_modules et al. when fuzzy searching
 let g:jsx_ext_required=0                                " Allow jsx in .js files (mocha tests use .js)
-let g:ctrlp_max_files = 0                               " Disable restriction on number of files
+let g:ctrlp_max_files = 20000                           " Max number of files for Ctrl-P
 map <C-n> :NERDTreeToggle<CR>                           " Ctrl+n - Toggle NERDTree
 map <C-f> :NERDTreeFind<CR>                             " Ctrl+f - Go to open file in NERDTree
 let g:syntastic_check_on_open = 1
