@@ -39,7 +39,6 @@ fi
 
 # Aliases
 alias ll='ls -GFlash'
-alias ls="ls -GFlash"
 
 # Functions
 ssh27 () { ssh ollhel1@dev27.blocket.bin; }
