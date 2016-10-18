@@ -97,3 +97,11 @@ Login https://nomc-www3.blcoket.se/controlpanel
 [httpie](https://github.com/jkbrzt/httpie) - a command line HTTP client:
 
     pip install httpie
+
+# New virtual dev hosts
+
+    ssh lexxy.service.blocket.io
+    create --help
+    create olle
+    exit
+    ssh ollhel1@olle.node.blocket.io
