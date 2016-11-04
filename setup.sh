@@ -21,12 +21,12 @@ if [ -f ~/.npmrc ] || [ -h ~/.npmrc ]; then
 fi
 
 # Symlink new dot files
-ln -s ~/projects/utils/.profile ~/.profile
-ln -s ~/projects/utils/.bash_profile ~/.bash_profile
-ln -s ~/projects/utils/.bashrc ~/.bashrc
-ln -s ~/projects/utils/.vimrc ~/.vimrc
-ln -s ~/projects/utils/.gitconfig ~/.gitconfig
-ln -s ~/projects/utils/.npmrc ~/.npmrc
+ln -s ~/dotfiles/.profile ~/.profile
+ln -s ~/dotfiles/.bash_profile ~/.bash_profile
+ln -s ~/dotfiles/.bashrc ~/.bashrc
+ln -s ~/dotfiles/.vimrc ~/.vimrc
+ln -s ~/dotfiles/.gitconfig ~/.gitconfig
+ln -s ~/dotfiles/.npmrc ~/.npmrc
 
 # Install vim plugins
 if [[ ! -d ~/.vim/bundle ]]; then
