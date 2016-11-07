@@ -28,23 +28,6 @@ if [[ $(command -v git) ]]; then
     git config --global user.email olle.hellgren@blocket.se
 fi
 
-# PS1
-osx_git_dir='/Applications/Xcode.app/Contents/Developer/usr/share/git-core'
-if [[ -d $osx_git_dir ]]; then
-    # Load __git_ps1 function
-    . "$osx_git_dir/git-prompt.sh"
-fi
-git_dir='/usr/share/git-core/contrib/completion'
-if [[ -d $git_dir ]]; then
-    # Load __git_ps1 function
-    . "$git_dir/git-prompt.sh"
-fi
-if [[ $(command -v __git_ps1) ]]; then
-    export PS1="\[\e[0;33m\]\u@\h:\W$(__git_ps1 " (%s)") \\$\[\e[m\]\[$(tput sgr0)\] "
-else
-    export PS1="\[\e[0;33m\]\u@\h:\W \\$\[\e[m\]\[$(tput sgr0)\] "
-fi
-
 # Aliases
 alias ll='ls -GFlash'
 
