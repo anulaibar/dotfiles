@@ -1,21 +1,21 @@
 [alias]
-	co = checkout
-	br = branch
-	ci = commit
-	last = log -1 HEAD
-	st = status
-	unstage = reset HEAD --
+    co = checkout
+    br = branch
+    ci = commit
+    last = log -1 HEAD
+    st = status
+    unstage = reset HEAD --
 [http]
-	proxy = http://devproxy.blocket.bin:3128
+    #proxy = http://devproxy.blocket.bin:3128
 [https]
-	proxy = http://devproxy.blocket.bin:3128
+    #proxy = http://devproxy.blocket.bin:3128
 [core]
-	editor = /usr/bin/vim
+    editor = /usr/bin/vim
 [push]
-	default = simple
+    default = simple
 [user]
-	name = Olle Hellgren
-	email = olle.hellgren@blocket.se
+    name = Olle Hellgren
+    email = olle.hellgren@blocket.se
 [color]
     diff = auto
     status = auto
