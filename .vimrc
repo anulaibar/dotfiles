@@ -32,6 +32,7 @@ let g:syntastic_python_pep8_exec = '~/.local/bin/pep8'
 let g:syntastic_python_checkers = ['pep8']
 let g:syntastic_javascript_eslint_exec = './node_modules/.bin/eslint'
 let g:syntastic_javascript_checkers = ['eslint', 'jsxhint']
+let g:syntastic_php_checkers = ['php']
 
 "==================== Vim settings ===========================================
 syntax on                                               " Use syntax highlighting
