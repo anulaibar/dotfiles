@@ -35,6 +35,9 @@ let g:syntastic_javascript_eslint_exec = './node_modules/.bin/eslint'
 let g:syntastic_javascript_checkers = ['eslint', 'jsxhint']
 let g:syntastic_php_checkers = ['php']
 
+Plugin 'ryanoasis/vim-devicons'                                 " File type icons in nerd tree
+set guifont=Droid\ Sans\ Mono\ for\ Powerline\ Plus\ Nerd\ File\ Types:h11
+
 call vundle#end()
 filetype on
 
