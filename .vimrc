@@ -13,6 +13,7 @@ Plugin 'othree/html5.vim'                                       " HTML syntax hi
 Plugin 'altercation/vim-colors-solarized'                       " Color scheme
 Plugin 'tpope/vim-commentary'                                   " Comment out text in visual mode with 'gc'
 Plugin 'tpope/vim-sleuth'                                       " Set shiftwidth and expandtab automatically
+Plugin 'editorconfig/editorconfig-vim'
 
 Plugin 'mxw/vim-jsx'                                            " JSX syntax highlighting and indenting
 let g:jsx_ext_required=0                                        " Allow jsx in .js files (mocha tests use .js)
@@ -34,9 +35,6 @@ let g:syntastic_python_checkers = ['pep8']
 let g:syntastic_javascript_eslint_exec = './node_modules/.bin/eslint'
 let g:syntastic_javascript_checkers = ['eslint', 'jsxhint']
 let g:syntastic_php_checkers = ['php']
-
-Plugin 'ryanoasis/vim-devicons'                                 " File type icons in nerd tree
-set guifont=Droid\ Sans\ Mono\ for\ Powerline\ Plus\ Nerd\ File\ Types:h11
 
 call vundle#end()
 filetype on
