@@ -4,16 +4,6 @@ export LESSCHARSET=UTF-8
 export LC_ALL=en_US.UTF-8
 export EDITOR=vim
 
-# Docker config
-if [[ $(command -v docker) ]]; then
-    export DOCKER_TLS_VERIFY="1"
-    export DOCKER_HOST="tcp://192.168.99.100:2376"
-    export DOCKER_CERT_PATH="/Users/ollehellgren/.docker/machine/machines/dev"
-    export DOCKER_MACHINE_NAME="dev"
-    # Run this command to configure your shell:
-    # eval "$(docker-machine env dev)"
-fi
-
 # Git config
 if [[ $(command -v git) ]]; then
     git config --global alias.co checkout
