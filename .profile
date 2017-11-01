@@ -22,19 +22,6 @@ fi
 alias ll='ls -GFlash'
 
 # Functions
-ssh27 () { ssh ollhel1@dev27.blocket.bin; }
-ssh28 () { ssh ollhel1@dev28.blocket.bin; }
-ssh29 () { ssh ollhel1@dev29.blocket.bin; }
-ssh30 () { ssh ollhel1@dev30.blocket.bin; }
-ssh31 () { ssh ollhel1@dev31.blocket.bin; }
-ssh32 () { ssh ollhel1@dev32.blocket.bin; }
-ssh33 () { ssh ollhel1@dev33.blocket.bin; }
-ssh34 () { ssh ollhel1@dev34.blocket.bin; }
-ssh35 () { ssh ollhel1@dev35.blocket.bin; }
-ssh36 () { ssh ollhel1@dev36.blocket.bin; }
-ssh37 () { ssh ollhel1@dev37.blocket.bin; }
-ssh38 () { ssh ollhel1@dev38.blocket.bin; }
-
 m() {
     if [ $1 != "" ];
     then
