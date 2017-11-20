@@ -26,5 +26,10 @@ if [[ $(command -v git) ]]; then
     git config --global user.email olle.hellgren@blocket.se
 fi
 
+# Git completion
+if [ -f ~/.git-completion.bash ]; then
+  . ~/.git-completion.bash
+fi
+
 # Aliases
 alias ll='ls -GFlash'

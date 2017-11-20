@@ -29,10 +29,15 @@ ln -s ~/dotfiles/.npmrc ~/.npmrc
 ln -s ~/dotfiles/.ssh/config ~/.ssh/config
 
 # Install vim plugins
-if [[ ! -d ~/.vim/bundle ]]; then
+if [ ! -d ~/.vim/bundle ]; then
 	 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 fi
 vim +PluginInstall +qall
+
+# Install git-completion
+if [ ! -f ~/.git-completion.bash ]; then
+	curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash -o ~/.git-completion.bash
+fi
 
 echo -e "\033[34mGreat! Now just load .bash_profile to get all the glamour:"
 echo -e "\033[35m. ~/.bashrc\033[0m"
