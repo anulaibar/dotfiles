@@ -1,16 +1,13 @@
-"========================================== Plugins ==============================================
+"======================================== Plugins ==============================================
 filetype off                                                    " Disable file type detection
 set rtp+=~/.vim/bundle/Vundle.vim                               " Set the runtime path to include Vundle
 call vundle#begin()                                             " Initialize vundle
-
 Plugin 'VundleVim/Vundle.vim'                                   " Let Vundle manage Vundle
 Plugin 'tpope/vim-surround'                                     " Modify surrounding quotes, parens, brackets ...
 Plugin 'gregsexton/MatchTag'                                    " Highlight matching HTML tag
 Plugin 'tpope/vim-fugitive'                                     " Git wrapper. Includes :Gdiff, :Gstatus, :Gblame ...
-Plugin 'airblade/vim-gitgutter'                                 " Shows signs for added, modified, and removed lines
 Plugin 'pangloss/vim-javascript'                                " JS syntax highlighting and indenting
 Plugin 'othree/html5.vim'                                       " HTML syntax highlighting and indenting
-Plugin 'altercation/vim-colors-solarized'                       " Color scheme
 Plugin 'tpope/vim-commentary'                                   " Comment out text in visual mode with 'gc'
 Plugin 'tpope/vim-sleuth'                                       " Set shiftwidth and expandtab automatically
 Plugin 'editorconfig/editorconfig-vim'
@@ -44,11 +41,10 @@ nnoremap <C-l> :SyntasticCheck<CR>
 call vundle#end()
 filetype on
 
-"======================================== Vim settings ===========================================
+"======================================== Settings ===========================================
 syntax on                                                       " Use syntax highlighting
 filetype plugin indent on                                       " Load plugins and indent files for current file
 set t_Co=256                                                    " Use 256 colors
-set background=light                                            " Background color
 let mapleader = ","                                             " Press comma to activate commands
 set list                                                        " Dispay whitespace chars
 set listchars=tab:▸\ ,trail:·                                   " Display only tabs and spaces
@@ -56,6 +52,9 @@ nmap <leader>l :set list!<CR>
 set autoindent                                                  " Copy indent from current line when starting a new line
 set smartindent                                                 " Context aware indent when starting a new line
 set nowrap                                                      " Do not line break long lines
+set autoread                                                    " Detect external file changes
+set backupcopy=yes
+set hidden                                                      " Hide buffers instead of closing them
 nnoremap <C-b> :bnext<CR>                                       " Ctrl+b - Go to the next buffer
 nnoremap <C-S-b> :bprevious<CR>                                 " Ctrl+Shift+b - Go to the previous buffer
 vmap <C-c> :w !pbcopy<CR><CR>
