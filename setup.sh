@@ -1,9 +1,6 @@
 #!/bin/bash
 
 # Remove existing dot files (regular files or symlinks)
-if [ -f ~/.profile ] || [ -h ~/.profile ]; then
-	 rm ~/.profile
-fi
 if [ -f ~/.bash_profile ] || [ -h ~/.bash_profile ]; then
 	 rm ~/.bash_profile
 fi
@@ -24,7 +21,6 @@ if [ -f ~/.ssh/config ] || [ -h ~/.ssh/config ]; then
 fi
 
 # Symlink new dot files
-ln -s ~/dotfiles/.profile ~/.profile
 ln -s ~/dotfiles/.bash_profile ~/.bash_profile
 ln -s ~/dotfiles/.bashrc ~/.bashrc
 ln -s ~/dotfiles/.vimrc ~/.vimrc
@@ -39,4 +35,4 @@ fi
 vim +PluginInstall +qall
 
 echo -e "\033[34mGreat! Now just load .bash_profile to get all the glamour:"
-echo -e "\033[35m. ~/.bash_profile\033[0m"
+echo -e "\033[35m. ~/.bashrc\033[0m"
