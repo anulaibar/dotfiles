@@ -28,25 +28,3 @@ fi
 
 # Aliases
 alias ll='ls -GFlash'
-
-# Functions
-m() {
-    if [ $1 != "" ];
-    then
-        sshfs ollhel1@192.168.4.$1: $HOME/RemoteHome/dev$1
-        sleep 2
-        cd $HOME/RemoteHome/dev$1
-    else
-        echo "no server id"
-    fi
-}
-
-um() {
-    if [ $1 != "" ];
-    then
-        cd
-        umount -f $HOME/RemoteHome/dev$1
-    else
-        echo "no server id"
-    fi
-}
