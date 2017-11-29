@@ -13,6 +13,9 @@ fi
 if [ -f ~/.gitconfig ] || [ -h ~/.gitconfig ]; then
 	 rm ~/.gitconfig
 fi
+if [ -f ~/.gitignore ] || [ -h ~/.gitignore ]; then
+	 rm ~/.gitignore
+fi
 if [ -f ~/.npmrc ] || [ -h ~/.npmrc ]; then
 	 rm ~/.npmrc
 fi
@@ -25,8 +28,13 @@ ln -s ~/dotfiles/.bash_profile ~/.bash_profile
 ln -s ~/dotfiles/.bashrc ~/.bashrc
 ln -s ~/dotfiles/.vimrc ~/.vimrc
 ln -s ~/dotfiles/.gitconfig ~/.gitconfig
+ln -s ~/dotfiles/.gitignore ~/.gitignore
 ln -s ~/dotfiles/.npmrc ~/.npmrc
 ln -s ~/dotfiles/.ssh/config ~/.ssh/config
+
+# Make git, npm and curl requests via dev proxy
+export HTTP_PROXY=http://devproxy.blocket.bin:3128
+export HTTPS_PROXY=http://devproxy.blocket.bin:3128
 
 # Install vim plugins
 if [ ! -d ~/.vim/bundle ]; then
@@ -36,7 +44,7 @@ vim +PluginInstall +qall
 
 # Install git-completion
 if [ ! -f ~/.git-completion.bash ]; then
-	curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash -o ~/.git-completion.bash
+	curl -s https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash -o ~/.git-completion.bash
 fi
 
 echo -e "\033[34mGreat! Now just load .bash_profile to get all the glamour:"
