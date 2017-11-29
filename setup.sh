@@ -47,5 +47,6 @@ if [ ! -f ~/.git-completion.bash ]; then
 	curl -s https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash -o ~/.git-completion.bash
 fi
 
-echo -e "\033[34mGreat! Now just load .bash_profile to get all the glamour:"
-echo -e "\033[35m. ~/.bashrc\033[0m"
+. ~/.bash_profile
+
+echo -e "\033[34m\nWell done! Now, go have a 🍭  day!\n"
