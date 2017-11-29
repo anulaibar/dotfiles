@@ -1,10 +1,19 @@
-# PS1
+# Git branch
 parse_git_branch() {
      git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
-YELLOW="\[\033[33m\]"
-RESET="\[\033[0m\]"
-export PS1="${YELLOW}\u@\h:\W\$(parse_git_branch) $ ${RESET}"
+
+# Colors
+yellow="\[\033[33m\]"
+magenta="\[\033[35m\]"
+light_magenta="\[\033[95m\]"
+red="\[\033[31m\]"
+cyan="\[\033[36m\]"
+green="\[\033[32m\]"
+reset="\[\033[0m\]"
+
+# PS1
+export PS1="${yellow}\u@\h:\W${cyan}\$(parse_git_branch)${yellow} $ ${reset}"
 
 # Env variables
 export PYTHONIOENCODING=UTF-8
