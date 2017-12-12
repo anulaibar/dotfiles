@@ -55,6 +55,8 @@ set nowrap                                                      " Do not line br
 set autoread                                                    " Detect external file changes
 set backupcopy=yes
 set hidden                                                      " Hide buffers instead of closing them
+set incsearch                                                   " Highlight matches while searching
+set ignorecase                                                  " Make searches case insensitive
 nnoremap <C-b> :bnext<CR>                                       " Ctrl+b - Go to the next buffer
 nnoremap <C-S-b> :bprevious<CR>                                 " Ctrl+Shift+b - Go to the previous buffer
 vmap <C-c> :w !pbcopy<CR><CR>
