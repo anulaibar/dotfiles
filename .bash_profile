@@ -39,7 +39,7 @@ fi
 [[ -s ~/.git-completion.bash ]] && source ~/.git-completion.bash
 
 # Git aliases
-[[ -s ~/.git_aliases ]] && source ~/.git_aliases
+[[ -s ~/.git-aliases ]] && source ~/.git-aliases
 
 # Aliases
 alias ll='ls -GFlash'
