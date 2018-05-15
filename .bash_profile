@@ -36,9 +36,10 @@ if [[ $(command -v git) ]]; then
 fi
 
 # Git completion
-if [ -f ~/.git-completion.bash ]; then
-  . ~/.git-completion.bash
-fi
+[[ -s ~/.git-completion.bash ]] && source ~/.git-completion.bash
+
+# Git aliases
+[[ -s ~/.git_aliases ]] && source ~/.git_aliases
 
 # Aliases
 alias ll='ls -GFlash'

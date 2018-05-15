@@ -22,15 +22,19 @@ fi
 if [ -f ~/.ssh/config ] || [ -h ~/.ssh/config ]; then
 	 rm ~/.ssh/config
 fi
+if [ -f ~/.git_aliases ] || [ -h ~/.git_aliases ]; then
+	 rm ~/.git_aliases
+fi
 
 # Symlink new dot files
-ln -s ~/dotfiles/.bash_profile ~/.bash_profile
-ln -s ~/dotfiles/.bashrc ~/.bashrc
-ln -s ~/dotfiles/.vimrc ~/.vimrc
-ln -s ~/dotfiles/.gitconfig ~/.gitconfig
-ln -s ~/dotfiles/.gitignore ~/.gitignore
-ln -s ~/dotfiles/.npmrc ~/.npmrc
-ln -s ~/dotfiles/.ssh/config ~/.ssh/config
+ln -s /code/dotfiles/.bash_profile ~/.bash_profile
+ln -s /code/dotfiles/.bashrc ~/.bashrc
+ln -s /code/dotfiles/.vimrc ~/.vimrc
+ln -s /code/dotfiles/.gitconfig ~/.gitconfig
+ln -s /code/dotfiles/.gitignore ~/.gitignore
+ln -s /code/dotfiles/.npmrc ~/.npmrc
+ln -s /code/dotfiles/.ssh/config ~/.ssh/config
+ln -s /code/dotfiles/.git_aliases ~/.git_aliases
 
 # Make git, npm and curl requests via dev proxy
 export HTTP_PROXY=http://devproxy.blocket.bin:3128
