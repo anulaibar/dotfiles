@@ -47,7 +47,7 @@ filetype plugin indent on                                       " Load plugins a
 set t_Co=256                                                    " Use 256 colors
 let mapleader = ","                                             " Press comma to activate commands
 set list                                                        " Dispay whitespace chars
-set listchars=tab:▸\ ,trail:·                                   " Display only tabs and spaces
+set listchars=tab:>-,trail:.
 nmap <leader>l :set list!<CR>
 set autoindent                                                  " Copy indent from current line when starting a new line
 set smartindent                                                 " Context aware indent when starting a new line

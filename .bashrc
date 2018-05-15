@@ -33,3 +33,7 @@ fi
 
 # Aliases
 alias ll='ls -GFlash'
+
+if [ -f ~/.git_aliases ]; then
+  . ~/.git_aliases
+fi
