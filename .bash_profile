@@ -42,3 +42,5 @@ fi
 
 # Aliases
 alias ll='ls -GFlash'
+alias dc='docker-compose'
+alias d='docker'
