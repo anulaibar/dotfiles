@@ -27,14 +27,14 @@ if [ -f ~/.git-aliases ] || [ -h ~/.git-aliases ]; then
 fi
 
 # Symlink new dot files
-ln -s /code/dotfiles/.bash_profile ~/.bash_profile
-ln -s /code/dotfiles/.bashrc ~/.bashrc
-ln -s /code/dotfiles/.vimrc ~/.vimrc
-ln -s /code/dotfiles/.gitconfig ~/.gitconfig
-ln -s /code/dotfiles/.gitignore ~/.gitignore
-ln -s /code/dotfiles/.npmrc ~/.npmrc
-ln -s /code/dotfiles/.ssh/config ~/.ssh/config
-ln -s /code/dotfiles/.git-aliases ~/.git-aliases
+ln -s $(pwd)/.bash_profile ~/.bash_profile
+ln -s $(pwd)/.bashrc ~/.bashrc
+ln -s $(pwd)/.vimrc ~/.vimrc
+ln -s $(pwd)/.gitconfig ~/.gitconfig
+ln -s $(pwd)/.gitignore ~/.gitignore
+ln -s $(pwd)/.npmrc ~/.npmrc
+ln -s $(pwd)/.ssh/config ~/.ssh/config
+ln -s $(pwd)/.git-aliases ~/.git-aliases
 
 # Make git, npm and curl requests via dev proxy
 export HTTP_PROXY=http://devproxy.blocket.bin:3128
