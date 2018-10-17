@@ -36,10 +36,6 @@ ln -s $(pwd)/.npmrc ~/.npmrc
 ln -s $(pwd)/.ssh/config ~/.ssh/config
 ln -s $(pwd)/.git-aliases ~/.git-aliases
 
-# Make git, npm and curl requests via dev proxy
-export HTTP_PROXY=http://devproxy.blocket.bin:3128
-export HTTPS_PROXY=http://devproxy.blocket.bin:3128
-
 # Install vim plugins
 if [ ! -d ~/.vim/bundle ]; then
 	 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
