@@ -51,13 +51,13 @@ set listchars=tab:>-,trail:.
 nmap <leader>l :set list!<CR>
 set autoindent                                                  " Copy indent from current line when starting a new line
 set smartindent                                                 " Context aware indent when starting a new line
-set nowrap                                                      " Do not line break long lines
 set autoread                                                    " Detect external file changes
 set backupcopy=yes
 set hidden                                                      " Hide buffers instead of closing them
 set incsearch                                                   " Highlight matches while searching
 set ignorecase                                                  " Make searches case insensitive
 set paste
+set number
 nnoremap <C-b> :bnext<CR>                                       " Ctrl+b - Go to the next buffer
 nnoremap <C-S-b> :bprevious<CR>                                 " Ctrl+Shift+b - Go to the previous buffer
 vmap <C-c> :w !pbcopy<CR><CR>
