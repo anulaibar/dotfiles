@@ -25,6 +25,9 @@ fi
 if [ -f ~/.git-aliases ] || [ -h ~/.git-aliases ]; then
 	 rm ~/.git-aliases
 fi
+if [ -f ~/.editorconfig ] || [ -h ~/.editorconfig ]; then
+	 rm ~/.editorconfig
+fi
 
 # Symlink new dot files
 ln -s $(pwd)/.bash_profile ~/.bash_profile
@@ -35,6 +38,7 @@ ln -s $(pwd)/.gitignore ~/.gitignore
 ln -s $(pwd)/.npmrc ~/.npmrc
 ln -s $(pwd)/.ssh/config ~/.ssh/config
 ln -s $(pwd)/.git-aliases ~/.git-aliases
+ln -s $(pwd)/.editorconfig ~/.editorconfig
 
 # Install vim plugins
 if [ ! -d ~/.vim/bundle ]; then
