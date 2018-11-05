@@ -49,6 +49,7 @@ let mapleader = ","                                             " Press comma to
 set list                                                        " Dispay whitespace chars
 set listchars=tab:>-,trail:.
 nmap <leader>l :set list!<CR>
+nmap <CR> o<Esc>                                                " Insert newline w/o entering insert mode
 set autoindent                                                  " Copy indent from current line when starting a new line
 set smartindent                                                 " Context aware indent when starting a new line
 set autoread                                                    " Detect external file changes
