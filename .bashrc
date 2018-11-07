@@ -40,8 +40,10 @@ fi
 # Git aliases
 [[ -s ~/.git-aliases ]] && source ~/.git-aliases
 
+__git_complete g __git_main
+__git_complete gco _git_checkout
+
 # Aliases
 alias ll='ls -GFlash'
 alias dc='docker-compose'
 alias d='docker'
-alias g='git'
