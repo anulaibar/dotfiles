@@ -47,6 +47,7 @@ set backspace=indent,eol,start
 nnoremap <C-b> :bnext<CR>                                       " Ctrl+b - Go to the next buffer
 nnoremap <C-S-b> :bprevious<CR>                                 " Ctrl+Shift+b - Go to the previous buffer
 vmap <C-c> :w !pbcopy<CR><CR>
+nmap <C-N><C-N> :set invnumber<CR>                              " Ctrl+n+n - Toggle line numbers
 
 " Load all of the helptags now, after plugins have been loaded. All messages and errors will be ignored.
 silent! helptags ALL
