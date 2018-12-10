@@ -17,7 +17,7 @@ export PS1="${yellow}\u@\h:\W${cyan}\$(parse_git_branch)${yellow} $ ${reset}"
 export PYTHONIOENCODING=UTF-8
 export LESSCHARSET=UTF-8
 export LC_ALL=en_US.UTF-8
-export EDITOR=vim
+export EDITOR=nvim
 export LANG=sv_SE
 
 # Git config
@@ -28,7 +28,7 @@ if [[ $(command -v git) ]]; then
     git config --global alias.st status
     git config --global alias.unstage 'reset HEAD --'
     git config --global alias.last 'log -1 HEAD'
-    git config --global core.editor /usr/bin/vim
+    git config --global core.editor /usr/local/bin/nvim
     git config --global push.default simple
     git config --global user.name "Olle Hellgren"
     git config --global user.email olle.hellgren@blocket.se
@@ -47,3 +47,4 @@ __git_complete gco _git_checkout
 alias ll='ls -GFlash'
 alias dc='docker-compose'
 alias d='docker'
+alias v="nvim"
