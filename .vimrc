@@ -5,11 +5,23 @@
 " tpope/vim-commentary - Comment stuff out
 " tpope/vim-fugitive - Git wrapper. Includes :Gdiff, :Gstatus, :Gblame ...
 " tpope/vim-sleuth - Set shiftwidth and expandtab automatically
+" ryanoasis/vim-devicons - Add icons to vim plugins
+
+" mhartington/oceanic-next.git - Color theme
+set encoding=UTF-8
+syntax enable                                                   " Use syntax highlighting
+syntax on
+colorscheme OceanicNext
+let g:oceanic_next_terminal_bold = 1
+let g:oceanic_next_terminal_italic = 1
+
+" vim-airline/vim-airline.git - Vim statusline at the bottom of each window
+let g:airline_theme='oceanicnext'
 
 " w0rp/ale - Asynchronous Lint Engine
 let g:ale_completion_enabled = 1
-let g:ale_fixers = {'javascript': ['prettier-standard']}
-let g:ale_linters = {'javascript': ['prettier-standard']}
+let g:ale_fixers = {'javascript': ['prettier']}
+let g:ale_linters = {'javascript': ['eslint']}
 let g:ale_fix_on_save = 1
 let g:ale_lint_on_save = 1
 
@@ -27,7 +39,6 @@ let g:ctrlp_max_files = 20000                                   " Max number of 
 let g:jsx_ext_required=0                                        " Allow jsx in .js files
 
 "======================================== Settings ===========================================
-syntax on                                                       " Use syntax highlighting
 filetype plugin indent on                                       " Load plugins and indent files for current file
 set t_Co=256                                                    " Use 256 colors
 let mapleader = ","                                             " Press comma to activate commands
@@ -49,6 +60,9 @@ nnoremap <C-S-b> :bprevious<CR>                                 " Ctrl+Shift+b -
 vmap <C-c> :w !pbcopy<CR><CR>
 nmap <C-N><C-N> :set invnumber<CR>                              " Ctrl+n+n - Toggle line numbers
 set clipboard=unnamed
+if (has("termguicolors"))
+  set termguicolors
+endif
 
 " Load all of the helptags now, after plugins have been loaded. All messages and errors will be ignored.
 silent! helptags ALL
