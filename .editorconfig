@@ -10,7 +10,7 @@ indent_style = space
 end_of_line = lf
 insert_final_newline = true
 
-[*.{js,sql}]
+[*.{js,html,sql}]
 indent_size = 2
 
 [*.py]

@@ -20,8 +20,8 @@ let g:airline_theme='oceanicnext'
 
 " w0rp/ale - Asynchronous Lint Engine
 let g:ale_completion_enabled = 1
-let g:ale_fixers = {'javascript': ['prettier']}
-let g:ale_linters = {'javascript': ['eslint']}
+let g:ale_fixers = {'javascript': ['prettier'], 'python': ['black']}
+let g:ale_linters = {'javascript': ['eslint'], 'python': ['flake8']}
 let g:ale_fix_on_save = 1
 let g:ale_lint_on_save = 1
 
