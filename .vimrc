@@ -11,7 +11,6 @@ if (has("termguicolors"))
  set termguicolors
 endif
 syntax on
-g:onedark_terminal_italics
 colorscheme onedark
 
 " w0rp/ale - Asynchronous Lint Engine
