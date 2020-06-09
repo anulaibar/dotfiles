@@ -13,12 +13,16 @@ reset="\[\033[0m\]"
 # PS1
 export PS1="${yellow}\u@\h:\W${cyan}\$(parse_git_branch)${yellow} $ ${reset}"
 
+# Initialize pyenv
+eval "$(pyenv init -)"
+
 # Env variables
 export PYTHONIOENCODING=UTF-8
 export LESSCHARSET=UTF-8
 export LC_ALL=en_US.UTF-8
 export EDITOR=nvim
 export LANG=sv_SE
+export PIPENV_MAX_DEPTH=7
 
 # Git config
 if [[ $(command -v git) ]]; then
@@ -48,3 +52,9 @@ alias ll='ls -GFlash'
 alias dc='docker-compose'
 alias d='docker'
 alias v="nvim"
+alias sh="bash"
+alias h="heroku"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
