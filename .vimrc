@@ -22,14 +22,28 @@ let g:ale_fix_on_save = 1
 let g:ale_python_auto_pipenv = 1
 
 " scrooloose/nerdtree - Show directory tree
-map <C-t> :NERDTreeToggle<CR>                                        " Ctrl+n - Toggle NERDTree
-map <C-f> :NERDTreeFind<CR>                                     " Ctrl+f - Go to open file in NERDTree
+map <C-n> :NERDTreeFind<CR>                                        " Ctrl+n - Toggle NERDTree
 
 " junegunn/fzf - Fuzzy search
 nnoremap <c-p> :GFiles<cr>
 
 " mxw/vim-jsx - JSX syntax highlighting and indenting
 let g:jsx_ext_required=0                                        " Allow jsx in .js files
+
+" dyng/ctrlsf.vim - JSX syntax highlighting and indenting
+nmap     <C-F>f <Plug>CtrlSFPrompt
+vmap     <C-F>f <Plug>CtrlSFVwordPath
+vmap     <C-F>F <Plug>CtrlSFVwordExec
+nmap     <C-F>n <Plug>CtrlSFCwordPath
+nmap     <C-F>p <Plug>CtrlSFPwordPath
+nnoremap <C-F>o :CtrlSFOpen<CR>
+nnoremap <C-F>t :CtrlSFToggle<CR>
+inoremap <C-F>t <Esc>:CtrlSFToggle<CR>
+
+
+" Decrease vim's update time from default 4000 ms
+" Makes airblade/vim-gitgutter updates faster
+set updatetime=300
 
 "======================================== Settings ===========================================
 filetype plugin indent on                                       " Load plugins and indent files for current file
@@ -46,6 +60,8 @@ set hidden                                                      " Hide buffers i
 set incsearch                                                   " Highlight matches while searching
 set number
 set backspace=indent,eol,start
+set statusline+=%F                                              " Show open file in status bar
+set laststatus=2
 nnoremap <C-b> :bnext<CR>                                       " Ctrl+b - Go to the next buffer
 nnoremap <C-S-b> :bprevious<CR>                                 " Ctrl+Shift+b - Go to the previous buffer
 vmap <C-c> :w !pbcopy<CR><CR>

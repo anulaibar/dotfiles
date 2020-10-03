@@ -51,7 +51,7 @@ __git_complete gco _git_checkout
 alias ll='ls -GFlash'
 alias dc='docker-compose'
 alias d='docker'
-alias v="nvim"
+alias v="vim"
 alias sh="bash"
 alias h="heroku"
 
