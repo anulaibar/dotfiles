@@ -6,18 +6,16 @@
 	st = status
 	unstage = reset HEAD --
 [core]
-	editor = /usr/local/bin/nvim
+	editor = /usr/bin/vim
 	excludesfile = ~/.gitignore
 [push]
 	default = simple
 [user]
 	name = Olle Hellgren
-	email = olle.hellgren@blocket.se
+	email = olle@rebla.se
 [color]
 	diff = auto
 	status = auto
 	branch = auto
 [pull]
 	rebase = true
-[url "git@github.com:"]
-	insteadOf = https://github.com/
