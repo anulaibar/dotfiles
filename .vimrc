@@ -6,12 +6,18 @@ let mapleader = " "                                             " Press comma to
 nnoremap <Leader><space> :noh<cr>
 set encoding=UTF-8
 syntax enable                                                   " Use syntax highlighting
-
-if (has("termguicolors"))
- set termguicolors
-endif
 syntax on
+
+" Use onedark color scheme
 colorscheme onedark
+highlight Normal ctermbg=None
+highlight LineNr ctermfg=DarkGrey
+
+" Use italics for comments
+let g:one_allow_italics = 1
+let &t_ZH="\e[3m"
+let &t_ZR="\e[23m"
+highlight Comment cterm=italic
 
 " w0rp/ale - Asynchronous Lint Engine
 let g:ale_python_black_executable = 'pipenv'

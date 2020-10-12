@@ -1,5 +1,11 @@
 # Dotfiles
 
+## Completion
+
+```
+brew install bash-completion@2
+```
+
 Clone the repo into `~` and run `./setup.sh`.
 
 ## Vim
