@@ -13,33 +13,18 @@ reset="\[\033[0m\]"
 # PS1
 export PS1="${yellow}\u@\h:\W${cyan}\$(parse_git_branch)${yellow} $ ${reset}"
 
-# Initialize pyenv
-eval "$(pyenv init -)"
-
 # Env variables
 export PYTHONIOENCODING=UTF-8
 export LESSCHARSET=UTF-8
 export LC_ALL=en_US.UTF-8
-export EDITOR=nvim
+export EDITOR=vim
 export LANG=sv_SE
 export PIPENV_MAX_DEPTH=7
 
-# Git config
-if [[ $(command -v git) ]]; then
-    git config --global alias.co checkout
-    git config --global alias.br branch
-    git config --global alias.ci commit
-    git config --global alias.st status
-    git config --global alias.unstage 'reset HEAD --'
-    git config --global alias.last 'log -1 HEAD'
-    git config --global core.editor /usr/local/bin/nvim
-    git config --global push.default simple
-    git config --global user.name "Olle Hellgren"
-    git config --global user.email olle.hellgren@blocket.se
-fi
-
 # Git completion
-[[ -s ~/.git-completion.bash ]] && source ~/.git-completion.bash
+if [ -f ~/.git-completion.bash ]; then
+  source ~/.git-completion.bash
+fi
 
 # Git aliases
 [[ -s ~/.git-aliases ]] && source ~/.git-aliases
@@ -55,6 +40,5 @@ alias v="vim"
 alias sh="bash"
 alias h="heroku"
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+[ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
+[ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
