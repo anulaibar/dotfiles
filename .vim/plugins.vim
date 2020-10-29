@@ -14,6 +14,7 @@ Plug 'dense-analysis/ale'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-commentary'
 Plug 'dyng/ctrlsf.vim'
+Plug 'google/vim-searchindex'
 
 " Initialize plugin system
 call plug#end()
