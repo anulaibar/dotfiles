@@ -1,11 +1,8 @@
-#!/bin/bash
+#!/bin/zsh
 
 # Remove existing dot files (regular files or symlinks)
-if [ -f ~/.bash_profile ] || [ -h ~/.bash_profile ]; then
-	rm ~/.bash_profile
-fi
-if [ -f ~/.bashrc ] || [ -h ~/.bashrc ]; then
-	rm ~/.bashrc
+if [ -f ~/.zshrc ] || [ -h ~/.zshrc ]; then
+	rm ~/.zshrc
 fi
 if [ -f ~/.vimrc ] || [ -h ~/.vimrc ]; then
 	rm ~/.vimrc
@@ -34,8 +31,8 @@ if [ -f ~/.vim/plugins.vim ] || [ -h ~/.vim/plugins.vim ]; then
 fi
 
 # Symlink new dot files
-ln -s $(pwd)/.bash_profile ~/.bash_profile
-ln -s $(pwd)/.bashrc ~/.bashrc
+ln -s $(pwd)/.zsh_profile ~/.zsh_profile
+ln -s $(pwd)/.zshrc ~/.zshrc
 ln -s $(pwd)/.vimrc ~/.vimrc
 ln -s $(pwd)/.gitconfig ~/.gitconfig
 ln -s $(pwd)/.gitignore ~/.gitignore
@@ -50,12 +47,12 @@ vim +PlugClean +qall
 vim +PlugInstall +qall
 
 # Install git-completion
-if [ ! -f ~/.git-completion.bash ]; then
-	curl -s https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash -o ~/.git-completion.bash
+if [ ! -f ~/.git-completion.zsh ]; then
+	curl -s https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.zsh -o ~/.git-completion.zsh
 fi
 
 blue="\033[34m"
 magenta="\033[35m"
 
-echo -e "${blue}Now just load the profile and you're good to go! ✌️"
-echo -e "${magenta}. ~/.bash_profile"
+echo -e "${blue}Now just load .zshrc and you're good to go! ✌️"
+echo -e "${magenta}. ~/.zshrc"
